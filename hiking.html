@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Adventures | The Coder's Almanac</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Leaflet JS and GPX Plugin -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <my-sidebar></my-sidebar>
+        </aside>
+
+        <main class="main-content">
+            <!-- Page Header -->
+            <section class="page-header">
+                <h2>Hiking Reports</h2>
+                <p class="page-subtitle">Attempting to summit the highest point in all 50 US states</p>
+            </section>
+
+            <!-- Progress Stats -->
+            <section class="stats-banner">
+                <div class="stat-item">
+                    <p class="stat-number" id="completed-count"></p>
+                    <span class="stat-label">Peaks Completed</span>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-number" id="to-go-count"></p>
+                    <span class="stat-label">To Go</span>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-number" id="total-elevation"></p>
+                    <span class="stat-label">Total Elevation</span>
+                </div>
+            </section>
+
+            <!-- Map Section -->
+            <section class="content-section">
+                <h3 class="section-label">Highest Peaks Map</h3>
+                
+                <div class="map-container">
+                    <div id="hiking-map"></div>
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <span class="legend-marker completed"></span>
+                            <span>Completed Peaks</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-marker planned"></span>
+                            <span>Planned Routes</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trip Reports -->
+            <section class="content-section">
+                <h3 class="section-label">Trip Reports</h3>
+                <!-- <h3 class="subsection-title">Highest Peaks Reports</h3> -->
+                    <div class="trip-grid">
+                        <article class="trip-card">
+                            <img src="images/mtwashingtonsummit.jpg" alt="Mount Washington">
+                            <div class="trip-content">
+                                <h5>Mount Washington, NH</h5>
+                                <p class="trip-meta">July 2025</p>
+                                <a href="hiking-reports/mt-washington-report.html" class="trip-link">Read More →</a>
+                            </div>
+                        </article>
+                    </div>
+                <!-- <h3 class="subsection-title">Other Hikes</h3>
+                <div class="trip-grid">
+                    <article class="trip-card">
+                            <img src="images/jefferson-adams.jpg" alt="Mount Jefferson and Mount Adams">
+                            <div class="trip-content">
+                                <h5>Mount Jefferson and Mount Adams, NH</h5>
+                                <p class="trip-meta">July 2025</p>
+                                <a href="hiking-reports/mt-jefferson-adams.html" class="trip-link">Read More →</a>
+                            </div>
+                        </article>
+                        
+                </div> -->
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <my-footer></my-footer>
+
+    <script src="javascript/hiking-map.js"></script>
+    <script src="javascript/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const stats = window.hikingMap.getStats();
+        document.getElementById('completed-count').textContent = stats.completedCount;
+        document.getElementById('to-go-count').textContent = stats.peaksLeftCount;
+        document.getElementById('total-elevation').textContent = stats.totalElevation.toLocaleString();
+        });
+    </script>
+</body>
+</html>

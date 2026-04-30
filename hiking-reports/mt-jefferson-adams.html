@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Marcy Trip Report | The Coder's Almanac</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Leaflet JS and GPX Plugin -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
+    <!-- leaflet-elevation -->
+    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
+    <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
+ 
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <my-sidebar></my-sidebar>
+        </aside>
+
+        <main class="main-content">
+            <!-- Trip Report Header -->
+            <article class="trip-report">
+                <header class="trip-report-header">
+                    <h2>Mount Jefferson and Mount Adams, NH</h2>
+                    <p class="trip-subtitle"> White Mountains</p>
+                    <div class="trip-meta-bar">
+                        <span> July 6, 2025</span>
+                        <span> Elevation: 6,288 ft</span>
+                    </div>
+                </header>
+
+                <!-- Hero Image -->
+                <div class="trip-hero-image">
+                    <img src="../images/mtwashingtonsummit.jpg" alt="Summit of Mount Washington">
+                    <p class="image-caption">Summit sign at the Mount Washington observatory</p>
+                </div>
+
+                <!-- Trip Stats -->
+                <section class="trip-stats-section">
+                    <h3>Trip Statistics</h3>
+                    <div class="trip-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-value">8.35 mi</span>
+                            <span class="stat-label">Total Distance</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value">4,501 ft</span>
+                            <span class="stat-label">Elevation Gain</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value">~7 hours</span>
+                            <span class="stat-label">Moving Time</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Trip Report Content -->
+                <section class="trip-report-content">
+                    <h3>The Hike</h3>
+   
+                    <div class="trip-image-gallery">
+                        <img src="../images/IMG_20250705_082358_0.0_0.0.jpg" alt="Marcy Dam in morning light">
+                        <p class="image-caption">Hiking up Lion's Head with Wildcat Ski Resort in the background</p>
+
+                    </div>
+                 </section>
+
+                <!-- Maps -->
+                <section class="trip-maps-section">
+                    <h3> Map</h3>
+                    <div id="map" style="height: 400px;"></div>
+                </section>
+
+                <!-- Navigation -->
+                <div class="trip-navigation">
+                    <a href="../hiking.html" class="nav-button">← Back to All Hikes</a>
+                    <!-- <a href="trip-washington.html" class="nav-button">Next Trip: Mount Washington →</a> -->
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <my-footer></my-footer>
+
+    <script src="../javascript/script.js"></script>
+    <script>
+        window.initializeGpxTripMap({
+            gpxPath: '../routes/Mt_Jefferson_and_Mt_Adams.gpx',
+        });
+    </script>
+</body>
+</html>

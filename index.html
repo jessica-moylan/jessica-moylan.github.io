@@ -1,266 +1,153 @@
-<!DOCTYPE HTML>
-<!--
-	Minimaxing by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Minimaxing by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Moylan</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
+    <div class="app-container">
+        <aside class="sidebar">
+            <my-sidebar></my-sidebar>
+        </aside>
 
-								<header id="header">
-									<h1><a href="index.html" id="logo">Minimaxing</a></h1>
-									<nav id="nav">
-										<a href="index.html" class="current-page-item">Homepage</a>
-										<a href="twocolumn1.html">Two Column #1</a>
-										<a href="twocolumn2.html">Two Column #2</a>
-										<a href="onecolumn.html">One Column</a>
-										<a href="threecolumn.html">Three Column</a>
-									</nav>
-								</header>
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="profile-area">
+                    <img src="images\profile-pic.JPEG" alt="ME" class="profile-img">
+                </div>
+                <div class="hero-text">
+                    <h2>Jessica Moylan</h2>
+                    <p class="sub-text">Software Developer @ Brookhaven National Laboratory (NSLS-II) | Operations Research Masters Student @ Stony Brook</p>
+                </div>
+            </section>
 
-							</div>
-						</div>
-					</div>
-				</div>
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h3 class="section-label">About Me</h3>
+                <div class="about-content">
+                    <p>Hi! My name is Jessica (Jess) Moylan, and I am a software developer at the <a href="https://www.bnl.gov/ps/nsls2/about-NSLS-II.php" target="_blank">National Synchrotron Light Source II</a>, in the Data Science and Systems Integration (DSSI) group at Brookhaven National Laboratory (BNL) in Upton, NY. I am also a graduate student at Stony Brook University studying Operations Research where I am focusing on optimization and geographic information systems.</p>
+                    
+                    <p> My work focuses on developing software for use at beamlines for scientific research.
+                        When I am not at work or school, you can find me training for my next race, hiking, skiing, or exploring the outdoors. 
+                        In the upcoming years, my goals include summiting the highest point in all 50 US states and completing a 100 mile race. 
+                    </p>
+                    
+                    <p> I want to be able to use my skills to contribute to projects that have a positive impact on the world,
+                        whether that is through scientific research and innovation or environmental safety.
+                    </p>
 
-			<!-- Banner -->
-				<div id="banner-wrapper">
-					<div class="container">
+                </div>
+            </section>
 
-						<div id="banner">
-							<h2>Put something cool here!</h2>
-							<span>And put something almost as cool here, but a bit longer ...</span>
-						</div>
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <h3 class="section-label">Featured Projects</h3>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="card-header">
+                            <h4>Blop</h4>
+                        </div>
+                        <p class="project-description">A Bluesky optimization package used for beamline operations and experimental analysis.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/bluesky/blop" target="_blank" class="btn-mini">View Code</a>
+                            <a href="https://blueskyproject.io/blop/main/index.html" target="_blank" class="btn-mini-outline">Documentation</a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="card-header">
+                            <h4>Point Location</h4>
+                        </div>
+                        <p class="project-description">A Python project that determines the biome of a specific location in South America using a trapizodial map and a DAG</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">geopandas</span>
+                            <span class="tech-tag">PostGIS</span>
+                            <span class="tech-tag">Tkinter</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/jessica-moylan/AMS545-Project" target="_blank" class="btn-mini">View Code</a>
+                        </div>
+                    </article>
 
-					</div>
-				</div>
+                    <!-- <article class="project-card">
+                        <div class="card-header">
+                            <h4>Backcounty Travel</h4>
+                        </div>
+                        <p class="project-description">Collecting avalanche and observation data for safety while in the backcountry</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">BeautifulSoup</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">PostGIS</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/jessica-moylan/BackcountrySaftey" target = "_blank" class="btn-mini">Learn More</a>
+                        </div>
+                    </article> -->
+                </div>
+            </section>
 
-			<!-- Main -->
-				<div id="main">
-					<div class="container">
-						<div class="row main-row">
-							<div class="col-4 col-12-medium">
+            <!-- Personal Interests Section -->
+            <section id="interests" class="content-section">
+                <h3 class="section-label">Personal Interests</h3>
+                <p class="interests-intro">Check out the other activities I enjoy:</p>
+                
+                <div class="interests-grid">
+                    <article class="interest-card">
+                        <div class="interest-image-container">
+                            <img src="images/hiking.jpg" alt="Hiking">
+                            <div class="interest-overlay">
+                            </div>
+                        </div>
+                        <div class="interest-content">
+                            <h4>Hiking</h4>
+                            <p class="interest-description">A combination of documenting my progress and experiences completing the 50 highest peaks as well as other hikes</p>
+                            <a href="hiking.html" class="btn-interest">Explore My Hikes →</a>
+                        </div>
+                    </article>
 
-								<section>
-									<h2>Welcome to Minimaxing!</h2>
-									<p>This is <strong>Minimaxing</strong>, a fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a> and released for free by <a href="http://html5up.net">HTML5 UP</a>. It features
-									a simple, lightweight design, solid HTML5 and CSS3 code, and full responsive support for desktop, tablet, and small displays.</p>
-									<footer class="controls">
-										<a href="http://html5up.net" class="button">More cool designs ...</a>
-									</footer>
-								</section>
+                    <article class="interest-card">
+                        <div class="interest-image-container">
+                            <img src="images/skiing.jpg" alt="Skiing">
+                            <div class="interest-overlay">
+                            </div>
+                        </div>
+                        <div class="interest-content">
+                            <h4>Skiing</h4>
+                            <a href="skiing.html" class="btn-interest">Ski Gallery →</a>
+                        </div>
+                    </article>
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+                    <article class="interest-card">
+                        <div class="interest-image-container">
+                            <img src="images/running/1000006502.jpg" alt="Running" class="running-interest-image">
+                            <div class="interest-overlay">
+                            </div>
+                        </div>
+                        <div class="interest-content">
+                            <h4>Running</h4>
+                            <a href="running.html" class="btn-interest">See Running Stats →</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
 
-								<section>
-									<h2>Who are you guys?</h2>
-									<ul class="small-image-list">
-										<li>
-											<a href="#"><img src="images/pic2.jpg" alt="" class="left" /></a>
-											<h4>Jane Anderson</h4>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo facilisis amet quis.</p>
-										</li>
-										<li>
-											<a href="#"><img src="images/pic1.jpg" alt="" class="left" /></a>
-											<h4>James Doe</h4>
-											<p>Vitae magna eget odio amet mollis justo facilisis amet quis. Sed sagittis consequat.</p>
-										</li>
-									</ul>
-								</section>
+    <!-- Footer -->
+    <my-footer></my-footer>
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-
-								<section>
-									<h2>How about some links?</h2>
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Suspendisse varius ipsum</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Vitae magna sed dolore</a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</section>
-
-							</div>
-							<div class="col-6 col-12-medium">
-
-								<section>
-									<h2>An assortment of pictures and text</h2>
-									<p>Duis neque nisi, dapibus sed mattis quis, rutrum et accumsan.
-									Suspendisse nibh. Suspendisse vitae magna eget odio amet mollis
-									justo facilisis quis. Sed sagittis mauris amet tellus gravida
-									lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
-									sit amet consequat sed dolore.</p>
-									<ul class="big-image-list">
-										<li>
-											<a href="#"><img src="images/pic3.jpg" alt="" class="left" /></a>
-											<h3>Magna Gravida Dolore</h3>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-											Maecenas eu arcu purus, phasellus fermentum elit.</p>
-										</li>
-										<li>
-											<a href="#"><img src="images/pic4.jpg" alt="" class="left" /></a>
-											<h3>Magna Gravida Dolore</h3>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-											Maecenas eu arcu purus, phasellus fermentum elit.</p>
-										</li>
-										<li>
-											<a href="#"><img src="images/pic5.jpg" alt="" class="left" /></a>
-											<h3>Magna Gravida Dolore</h3>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-											Maecenas eu arcu purus, phasellus fermentum elit.</p>
-										</li>
-									</ul>
-								</section>
-
-							</div>
-							<div class="col-6 col-12-medium">
-
-								<article class="blog-post">
-									<h2>Just another blog post</h2>
-									<a class="comments" href="#">33 comments</a>
-									<a href="#"><img src="images/pic6.jpg" alt="" class="top blog-post-image" /></a>
-									<h3>Magna Gravida Dolore</h3>
-									<p>Aenean non massa sapien. In hac habitasse platea dictumst.
-									Maecenas sodales purus et nulla sodales aliquam. Aenean ac
-									porttitor metus. In hac habitasse platea dictumst. Phasellus
-									blandit turpis in leo scelerisque mollis. Nulla venenatis
-									ipsum nec est porta rhoncus. Mauris sodales sed pharetra
-									nisi nec consectetur. Cras elit magna, hendrerit nec
-									consectetur in, sollicitudin vitae justo. Cras amet aliquet
-									Aliquam ligula turpis, feugiat id fermentum malesuada,
-									rutrum eget turpis. Mauris sodales sed pharetra nisi nec
-									consectetur. Cras elit magna, hendrerit nec consectetur
-									in sollicitudin vitae.</p>
-									<footer class="controls">
-										<a href="#" class="button">Continue Reading</a>
-									</footer>
-								</article>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-			<!-- Footer -->
-				<div id="footer-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
-
-								<section>
-									<h2>How about a truckload of links?</h2>
-									<div>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Suspendisse varius ipsum</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Vitae magna sed dolore</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Suspendisse varius ipsum</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Vitae magna sed dolore</a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</section>
-
-							</div>
-							<div class="col-4 col-12-medium">
-
-								<section>
-									<h2>Something of interest</h2>
-									<p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
-									Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet
-									mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
-									lorem ipsum dolor sit blandit.</p>
-									<footer class="controls">
-										<a href="#" class="button">Oh, please continue ....</a>
-									</footer>
-								</section>
-
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12">
-
-								<div id="copyright">
-									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="javascript/script.js"></script>
+</body>
 </html>
